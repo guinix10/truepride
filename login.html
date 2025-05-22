@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - TruePride</title>
+  <link rel="stylesheet" href="assets/css/login.css" />
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <img src="assets/img/logo.png" alt="TruePride Logo" class="login-logo" />
+    <h1 class="login-title">Bem-vindo ao TruePride</h1>
+
+    <form action="php/login.php" method="POST" class="login-form">
+      <input type="text" name="identificador" placeholder="Email, CPF ou Telefone" required />
+      <input type="password" name="senha" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+      <p>Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </form>
+  </div>
+</body>
+</html>

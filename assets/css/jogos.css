@@ -1,0 +1,11 @@
+/* jogos.css - Estilo exclusivo da página de jogos */
+
+#games {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  /* Dá para adicionar estilos específicos para iframes ou cards de jogos aqui futuramente */
+  

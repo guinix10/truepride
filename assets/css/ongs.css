@@ -1,0 +1,15 @@
+/* ongs.css - Estilo exclusivo para a página ONGs e Parcerias */
+
+.parceiros-lista {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .parceiros-lista p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  

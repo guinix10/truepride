@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TruePride</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+  <script>
+    fetch('php/check_user.php')
+      .then(res => {
+        if (!res.ok) {
+          window.location.href = 'login.html';
+        }
+        return res.json();
+      })
+      .then(data => {
+        if (data.success) {
+          document.getElementById('content').style.display = 'block';
+        }
+      })
+      .catch(() => {
+        window.location.href = 'login.html';
+      });
+  </script>
+
+  <div id="content" style="display: none;">
+    <header>
+      <div class="container">
+        <img src="assets/img/logo.png" alt="TruePride Logo" class="logo" />
+        <nav>
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="pages/recursos.html">Recursos Educacionais</a></li>
+            <li><a href="pages/eventos.html">Eventos e Campanhas</a></li>
+            <li><a href="pages/suporte.html">Ferramentas de Suporte</a></li>
+            <li><a href="pages/jogos.html">Jogos</a></li>
+            <li><a href="pages/sobre.html">Sobre nós</a></li>
+            <li><a href="pages/ongs.html">ONGs e Parcerias</a></li>
+            <li><a href="pages/contato.html">Entre em contato</a></li>
+            <li><a href="php/logout.php">Sair</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="banner">
+        <div class="container">
+          <h1>Bem-vindo ao TruePride</h1>
+          <p>Espaço seguro e inclusivo para a comunidade LGBT+ escolar</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024-2025 TruePride. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

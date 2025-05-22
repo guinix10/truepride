@@ -1,0 +1,33 @@
+ #file-upload-section {
+  margin-top: 2rem;
+}
+
+.upload-label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#upload-recursos {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#file-display {
+  margin-top: 2rem;
+}
+
+#file-display button {
+  background-color: #ff7f50;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#file-display button:hover {
+  background-color: #811919;
+}

@@ -1,0 +1,9 @@
+/* sobre.css - Estilo exclusivo da página Sobre Nós */
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+  }
+  

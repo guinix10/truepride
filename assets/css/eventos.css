@@ -1,0 +1,107 @@
+/* eventos.css - Estilo exclusivo da página de eventos */
+
+#eventos-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;  /* Cor de fundo leve para o contêiner */
+  border-radius: 8px;  /* Bordas arredondadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* FullCalendar - Ajustes de layout */
+#calendar {
+  width: 100%;  /* Garante que o calendário ocupe toda a largura disponível */
+  max-width: 1000px;  /* Limita a largura máxima do calendário */
+  margin: 2rem auto;  /* Centraliza o calendário na página */
+  border-radius: 8px;  /* Bordas arredondadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do calendário */
+}
+
+/* Título da barra de ferramentas (como o título do mês) */
+.fc-header-toolbar {
+  background-color: #D26D19;  /* Cor de fundo laranja */
+  color: white;  /* Cor do texto */
+  padding: 10px 0;
+  border-radius: 8px 8px 0 0;  /* Bordas arredondadas no topo */
+  text-align: center;
+}
+
+/* Estilização das células de data */
+.fc-daygrid-day {
+  border: 1px solid #e1e1e1; /* Bordas suaves nas células */
+  padding: 5px;
+  background-color: #fff;  /* Fundo branco nas células */
+}
+
+/* Estilização dos números dos dias */
+.fc-daygrid-day-number {
+  font-size: 1.2rem;  /* Tamanho da fonte dos números dos dias */
+  color: #333;  /* Cor do texto */
+  font-weight: bold;
+}
+
+/* Estilizando os eventos dentro do calendário */
+.fc-event {
+  background-color: #ff7f50;  /* Cor de fundo laranja para os eventos */
+  color: white;  /* Cor do texto dos eventos */
+  border-radius: 5px;  /* Bordas arredondadas nos eventos */
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+/* Mudança de cor ao passar o mouse sobre os eventos */
+.fc-event:hover {
+  background-color: #e68a00; /* Cor de fundo mais escura */
+  cursor: pointer;
+}
+
+/* Ajustando os botões da barra de navegação (Próximo, Anterior, etc.) */
+.fc-button {
+  background-color: #ff7f50;  /* Cor de fundo laranja */
+  color: white;  /* Cor do texto */
+  border-radius: 5px;
+}
+
+.fc-button:hover {
+  background-color: #e68a00; /* Cor ao passar o mouse */
+}
+
+/* Estilo dos eventos individuais */
+.evento {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fffaf0;
+}
+
+.evento h3 {
+  margin-top: 0;
+}
+
+/* Estilo para o formulário do admin */
+#admin-eventos {
+  margin-top: 40px;
+}
+
+#admin-eventos form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#admin-eventos input,
+#admin-eventos textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#admin-eventos button {
+  padding: 10px;
+  background-color: #ff7f50; /* Cor laranja para os botões */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

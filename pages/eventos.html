@@ -1,0 +1,57 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eventos e Campanhas</title>
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/eventos.css" />
+
+  <!-- FullCalendar CSS (com crossorigin para evitar bloqueio ORB) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" crossorigin="anonymous" />
+
+  <!-- FullCalendar JS (também com crossorigin) -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js" crossorigin="anonymous"></script>
+
+  <!-- Script da página (defer para carregar após o DOM e depois do FullCalendar) -->
+  <script src="../assets/js/eventos.js" defer></script>
+</head>
+
+
+<body class="page-body pastel-orange">
+  <header>
+    <div class="container">
+      <img src="../assets/img/logo.png" class="logo" alt="TruePride Logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="recursos.html">Recursos Educacionais</a></li>
+          <li><a href="eventos.html">Eventos e Campanhas</a></li>
+          <li><a href="suporte.html">Ferramentas de Suporte</a></li>
+          <li><a href="jogos.html">Jogos</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="ongs.html">ONGs e Parcerias</a></li>
+          <li><a href="contato.html">Entre em contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="content container">
+      <h1>Eventos e Campanhas</h1>
+      
+      <!-- Calendário interativo -->
+      <div id="eventos-container">
+        <div id="calendar" style="max-width: 1000px; margin: 2rem auto;"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024-2025 TruePride. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
