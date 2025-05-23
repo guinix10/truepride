@@ -6,6 +6,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
+    // Verifica se os campos estão preenchidos
+    if (empty($email) || empty($senha)) {
+        echo "Preencha todos os campos.";
+        exit;
+    }
+
     $stmt = $conn->prepare("SELECT id, nome, email, senha, tipo FROM usuarios WHERE email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
@@ -34,9 +40,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Usuário não encontrado.";
     }
-    if (empty($email) || empty($senha)) {
-    echo "Preencha todos os campos.";
-    exit;
-}
 }
 ?>
